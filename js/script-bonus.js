@@ -1,8 +1,11 @@
 var kmInput = prompt("Quanti km vuoi percorrere?");
-var ageInput = prompt("Qual è il tuo anno di nascita?");
+var dateInput1 = prompt("Inserisci il tuo anno di nascita");
+
+var date = new Date();
+var dateInput2 = date.getFullYear();
 
 var km = parseInt(kmInput);
-var age = 2021 - parseInt(ageInput);
+var age = parseInt(dateInput2) - parseInt(dateInput1);
 
 var fullPrice = km * 0.21;
 var discount18 = fullPrice / 100 * 20;
